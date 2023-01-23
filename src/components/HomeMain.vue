@@ -266,7 +266,6 @@
       </div>
 
       <v-row class="bg-colored px-8 mt-12">
-        
         <v-col cols="12" md="3">
           <h3 class="white--text headup">
             Do not have Crypto?<br />
@@ -275,7 +274,7 @@
         </v-col>
         <v-col cols="12" md="6">
           <img
-          class="gray"
+            class="gray"
             width="100%%"
             height="100%"
             :src="require('@/assets/card.png')"
@@ -1129,7 +1128,7 @@ export default {
         slidesToShow: 5,
         slidesToScroll: 1,
         responsive: [
-        {
+          {
             // tablet
             breakpoint: 1200,
             settings: {
@@ -1216,7 +1215,7 @@ h6 {
   margin-right: -17px !important;
   margin-left: -17px !important;
 }
-.gray{
+.gray {
   filter: grayscale(100%);
 }
 .bg-colored {
@@ -1280,9 +1279,9 @@ h6 {
     margin-top: 20px !important;
   }
   .bg {
-    padding: 0px !important;
+    padding: 0px 0px !important;
   }
-  
+
   ::v-deep::before,
   ::after {
     color: white !important;
@@ -1376,8 +1375,8 @@ h2 {
   color: #858da0 !important;
   font-size: 14px;
 }
-a{
-  cursor:pointer;
+a {
+  cursor: pointer;
 }
 .add {
   width: 100% !important;
@@ -1395,9 +1394,9 @@ a{
   font-family: "Proxima-Nova-Font";
 }
 .social {
-  background: linear-gradient(180deg, #343A47 0%, #2C3140 100%);
-border-bottom: 1px solid #3F4655;
-border-radius: 12px;
+  background: linear-gradient(180deg, #343a47 0%, #2c3140 100%);
+  border-bottom: 1px solid #3f4655;
+  border-radius: 12px;
   padding: 26px 37px;
 }
 .bg {
@@ -1411,7 +1410,6 @@ border-radius: 12px;
 .bg-layer {
   background: url("@/assets/bg-layer.png") no-repeat bottom left, #212530;
   background-size: 52px 77px;
-  
 }
 .bg-layera {
   background: url("@/assets/bg-layera.png") no-repeat bottom left, #212530;

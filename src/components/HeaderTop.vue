@@ -1,5 +1,5 @@
 <template>
-  <v-card class="back px-0" height="110px" c tile>
+  <v-card class="back px-0" height="107px" c tile>
     <v-btn
       class="social ml-n4 mt-10"
       @click="hide()"
@@ -29,16 +29,12 @@
         <h2 class="white--text mr-4 font" @click="login()">log in</h2>
         <v-btn class="add mr-0" @click="register()">Register</v-btn>
       </v-toolbar>
-      
     </v-container>
-    
   </v-card>
-  
 </template>
   
   
   <script>
-  
 export default {
   components: {},
   name: "HeaderTop",
@@ -48,7 +44,6 @@ export default {
       data: true,
       image: true,
       username: "",
-      
     };
   },
   methods: {
@@ -57,13 +52,13 @@ export default {
       console.log("show,false");
       this.image = false;
     },
-    login(){
+    login() {
       this.$root.$emit("login", true);
-      
+      this.$root.$emit("tab", "tab-1");
     },
-    register(){
-      this.$root.$emit("register", true);
-      
+    register() {
+      this.$root.$emit("login", true);
+      this.$root.$emit("tab", "tab-0");
     },
     hide() {
       this.$root.$emit("showhide", false);
@@ -74,10 +69,10 @@ export default {
 };
 </script>
   <style scoped>
-  ::v-deep .v-toolbar__content{
-    padding-right: 0px!important;
-    padding-left: 0px!important;
-  }
+::v-deep .v-toolbar__content {
+  padding-right: 0px !important;
+  padding-left: 0px !important;
+}
 .data {
   display: none;
 }
@@ -92,6 +87,7 @@ export default {
 * {
   font-family: "Proxima-Nova-Font";
 }
+
 .font {
   font-weight: 700;
   font-size: 16px;
@@ -99,7 +95,7 @@ export default {
 }
 .font:hover {
   font-weight: 800;
-  color: #67fde2!important;;
+  color: #67fde2 !important;
 }
 .im {
   transform: rotate(180deg);
@@ -107,7 +103,6 @@ export default {
 .back {
   box-shadow: none !important;
   background-color: #272a33 !important;
-  
 }
 .add {
   background: radial-gradient(
@@ -128,10 +123,9 @@ export default {
 .top {
   margin-top: -64px !important;
 }
-@media(max-width: 524px){
-  .back{
-
-  padding:0px 10px!important;
-  }  
+@media (max-width: 524px) {
+  .back {
+    padding: 0px 10px !important;
   }
+}
 </style>

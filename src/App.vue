@@ -18,6 +18,7 @@
         >
         
           <HeaderTop />
+          <LoginPop/>
           <HomeMain />
           <FooterBottom />
          
@@ -32,11 +33,13 @@ import HeaderTop from "./components/HeaderTop";
 import HomeMain from "./components/HomeMain";
 import SideBar from "./components/SideBar";
 import FooterBottom from "./components/FooterBottom";
+import LoginPop from "./components/LoginPop";
 
 export default {
   name: "App",
 
   components: {
+    LoginPop,
     HomeMain,
     HeaderTop,
     SideBar,
@@ -62,6 +65,7 @@ export default {
     });
    
   },
+  
 };
 </script>
 <style scoped>
